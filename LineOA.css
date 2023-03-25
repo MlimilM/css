@@ -1,0 +1,207 @@
+﻿.ServiceContainer, .Success {
+    height: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+#ServiceForm a {
+    color: #0c376f;
+    text-decoration:none;
+    font-weight:bold;
+}
+.step1 .container, .step2 .container, .step3 .container {
+    min-height: 63vh;
+}
+.Success .container {
+    min-height: 63vh;
+}
+.finish .container {
+    min-height: 60%;
+}
+.finish{
+    text-align:center;
+}
+.min-h {
+    min-height: calc( 63vh - 320px )
+}
+.notify-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    margin-bottom: 10px;
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+    font-size: 15px;
+    color: #636363;
+}
+.stop-section {
+    text-align: center;
+    padding:10px 30px;
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+}
+/*步驟*/
+.step {
+    list-style: none;
+    margin: .2rem 0;
+    width: 100%;
+    padding-inline-start: 0px;
+}
+
+.step .step-item {
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+    margin-top: 0;
+    min-height: 1rem;
+    position: relative; 
+    text-align: center;
+}
+
+.step .step-item:not(:first-child)::before {
+    background: #0c376f;
+    content: "";
+    height: 2px;
+    left: -50%;
+    position: absolute;
+    top: 17px;
+    width: 100%;
+}
+
+.step .step-item div {
+    font-size:14px;
+    color: #acb3c2;
+    display: inline-block;
+    padding: 35px 10px 0;
+    text-decoration: none;
+}
+.step .step-item.active div{
+    color:#0c376f
+}
+
+.step .step-item div::before {
+    background: #0c376f;
+    border: .1rem solid #fff;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 1.8rem;
+    left: 50%;
+    position: absolute;
+    top: .2rem;
+    transform: translateX(-50%);
+    width: 1.8rem;
+    z-index: 1;
+}
+
+.step .step-item.active div::before {
+    background: #fff;
+    border: 2px solid #0c376f;
+}
+
+.step .step-item.active ~ .step-item::before {
+  background: #e7e9ed;
+}
+
+.step .step-item.active ~ .step-item div::before {
+  background: #e7e9ed;
+}
+.step3 label{
+    margin-bottom:0px
+}
+.bg-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c376f;
+    height: 70px;
+}
+.bg-gray {
+    background-color: #eae9e9;
+}
+.font-14 {
+    font-size: 14px;
+}
+.font-15{
+    font-size:15px;
+}
+.hr-bold {
+    border: 1px solid #b2b2b2;
+}
+.text-gray {
+    color: #686767 !important
+}
+.text-blue {
+    color: #0c376f;
+}
+.border-right {
+    border-right: 1px solid #cfd4da;
+}
+.border-bottom {
+    border-bottom: 1px solid #cfd4da;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #2b598a !important;
+    border-color: #2b598a !important;
+    border-radius:7px;
+    font-size:15px;
+}
+
+.step1 input[type=checkbox] {
+    position: relative;
+    border: 2px solid #0c376f;
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0 0.6em 0 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 23px;
+    width: 23px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+}
+
+ input[type=checkbox]:hover {
+    opacity: 1;
+}
+
+ input[type=checkbox]:checked {
+    background-color: #0c376f;
+    opacity: 1;
+}
+
+.step1 input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 6px;
+    height: 10px;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1.4px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+}
+/*滑動開關*/
+.form-switch .form-check-input {
+    height: 18px;
+    width: 38px;
+}
+.form-check-label {
+    padding-right: 1.25rem;
+    margin-bottom: 0;
+}
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0c376f;
+}
